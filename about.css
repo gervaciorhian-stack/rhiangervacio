@@ -1,0 +1,212 @@
+body {
+    margin: 0;
+    background: url(image/bg.png);
+    background-repeat: no-repeat;
+    background-size: cover; /* Improved background scaling */
+    background-attachment: fixed;
+    background-position: center;
+    padding-bottom: 70px; /* Prevent content overlap with footer */
+}
+
+.logo-img {
+    height: 100px;
+    width: auto;
+    display: block;
+}
+
+.myth-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 3rem;
+
+}
+
+.myth-links {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.myth-links li {
+    margin-left: 40px;
+    position: relative; /* For proper dropdown positioning */
+}
+
+.myth-links a {
+    text-decoration: none;
+    color: white;
+    font-family: Ariel Black;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    transition: all 0.4s ease;
+    position: relative;
+}
+
+.myth-links a:hover {
+    color: #d4af37;
+}
+
+.myth-links a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -5px;
+    left: 0;
+    background-color: #d4af37;
+    transition: width 0.3s;
+}
+
+.myth-links a:hover::after {
+    width: 100%;
+}
+
+/* Fixed Dropdown Alignment */
+.dropdown {
+    position: fixed;
+    display: inline-block;
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 100%; /* Align below "PRODUCT" link */
+    left: 50%; /* Center dropdown */
+    transform: translateX(-50%); /* Center horizontally */
+    min-width: 160px;
+    background: rgba(0, 0, 0, 0.8);
+    border: 1px solid #d4af37;
+    border-radius: 12px;
+    list-style: none;
+    padding: 0;
+    margin: 5px 0 0;
+    opacity: 0;
+    transform: translate(-50%, 10px); /* Combine transforms */
+    pointer-events: none;
+    transition: all 0.3s ease;
+    z-index: 1000;
+}
+
+.dropdown-menu a {
+    display: block;
+    padding: 12px 20px;
+    color: white; /* Fixed text color */
+    text-decoration: none;
+    transition: 0.3s ease;
+    text-align: center; /* Center text in dropdown */
+    letter-spacing: 2px; /* Reduced spacing for readability */
+    font-size: 16px;
+}
+
+.dropdown-menu a:hover {
+    color: #d4af37; /* Gold highlight */
+    text-shadow: 0 0 5px #ffd700;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+}
+
+.dropdown:hover .dropdown-menu,
+.dropdown:focus-within .dropdown-menu {
+    opacity: 1;
+    transform: translate(-50%, 0); /* Correct alignment on hover */
+    pointer-events: auto;
+}
+body {
+    margin: 0;
+    padding: 0;
+    color: #f5f5f5;
+    font-family: 'Libre Baskerville', serif;
+}
+
+.about-container {
+	max-width: 900px;
+	margin: 10px auto;
+	padding: 50px;
+	color: gold;
+	background-color: rgba(0, 0, 0, 0.6);
+	border: 2px solid #c9a24d;
+	border-radius: 12px;
+	box-shadow: 0 0 25px rgba(201, 162, 77, 0.3);
+        background: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+
+}
+
+.about-container h1 {
+	text-align: center;
+	font-family: 'Cinzel', serif;
+	font-size: 42px;
+	color: #e8cc6e;
+	letter-spacing: 2px;
+	margin-bottom: 30px;
+}
+
+.about-container p {
+	font-size: 18px;
+	line-height: 1.8;
+	margin-bottom: 20px;
+	color: #e7d7c4;
+
+}
+.about-container
+ .intro {
+	font-size: 22px;
+	text-align: center;
+}
+
+.about-container span {
+	color: gold;
+	font-weight: bold;
+
+}
+
+.quote {
+	margin-top: 40px;
+	text-align: center;
+	font-style: italic;
+	font-size: 18px;
+	color: #c9a24d;
+	border-top: 1px solid #c9a24d;
+	padding-top: 20px;
+
+    
+       
+
+}
+.site-footer {
+	background-color: rgba(0,0,0,0);
+	padding: 10px 0;         	
+	text-align: center;
+	      
+	bottom: 0;
+	width: 100%;
+	height: 50px;            
+	box-shadow: 0 -2px 5px rgba(0,0,0,0.1);
+}
+
+.social-icons a {
+	color: #fff;
+	margin: 0 15px;
+	font-size: 30px;
+	text-decoration: none;
+	transition: transform 0.2s, color 0.2s;
+}
+
+.social-icons a:hover {
+	color: CC0033;
+	transform: scale(1.2);
+        backgroound-color: black;
+}
+
+.title p{
+font-size: 18px;
+text-decoration: none;
+font-family: serif;
+margin-top:10px;
+color: white;
+margin-right: 30px;
+
+}

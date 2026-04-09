@@ -1,0 +1,287 @@
+body {
+    margin: 0;
+    background: url(image/bg.png);
+    background-repeat: no-repeat;
+    background-size: cover; /* Improved background scaling */
+    background-attachment: fixed;
+    background-position: center;
+    padding-bottom: 70px; /* Prevent content overlap with footer */
+}
+
+.logo-img {
+    height: 100px;
+    width: auto;
+    display: block;
+}
+
+.myth-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 3rem;
+
+}
+
+.myth-links {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.myth-links li {
+    margin-left: 40px;
+    position: relative; /* For proper dropdown positioning */
+}
+
+.myth-links a {
+    text-decoration: none;
+    color: white;
+    font-family: Ariel Black;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    transition: all 0.4s ease;
+    position: relative;
+}
+
+.myth-links a:hover {
+    color: #d4af37;
+}
+
+.myth-links a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -5px;
+    left: 0;
+    background-color: #d4af37;
+    transition: width 0.3s;
+    backdrop-filter: blur;
+}
+
+.myth-links a:hover::after {
+    width: 100%;
+}
+
+/* Fixed Dropdown Alignment */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    color: #f5f5f5;
+    font-family: 'Libre Baskerville', serif;
+}
+
+.about-container {
+	max-width: 900px;
+	margin: 10px auto;
+	padding: 50px;
+	color: gold;
+	background-color: rgba(0, 0, 0, 0.6);
+	border: 2px solid #c9a24d;
+	border-radius: 12px;
+	box-shadow: 0 0 25px rgba(201, 162, 77, 0.3);
+        backdrop-filter: blur;
+}
+
+.about-container h1 {
+	text-align: center;
+	font-family: 'Cinzel', serif;
+	font-size: 42px;
+	color: #e8cc6e;
+	letter-spacing: 2px;
+	margin-bottom: 30px;
+}
+
+.about-container p {
+	font-size: 16px;
+	line-height: 1.8;
+	margin-bottom: 20px;
+	color: #e7d7c4;
+
+}
+
+.about-container .intro {
+	font-size: 18px;
+	text-align: center;
+}
+
+.about-container span {2
+	color: #e8a979;
+	font-weight: bold;
+}
+
+.quote {
+	margin-top: 40px;
+	text-align: center;
+	font-style: italic;
+	font-size: 18px;
+	color: #c9a24d;
+	border-top: 1px solid #c9a24d;
+	padding-top: 20px;
+}
+
+/* Fixed Dropdown Alignment */
+.dropdown {
+    position: ;
+    display: inline-block;
+
+}
+.dropdown-menu {
+    position: absolute;
+    top: 100%; /* Align below "PRODUCT" link */
+    left: 50%; /* Center dropdown */
+    transform: translateX(-50%); /* Center horizontally */
+    min-width: 160px;
+    background: rgba(0, 0, 0, 0.8);
+    border: 1px solid #d4af37;
+    border-radius: 12px;
+    list-style: none;
+    padding: 0;
+    margin: 5px 0 0;
+    opacity: 0;
+    transform: translate(-50%, 10px); /* Combine transforms */
+    pointer-events: none;
+    transition: all 0.3s ease;
+    z-index: 1000;
+}
+
+.dropdown-menu a {
+    display: block;
+    padding: 12px 20px;
+    color: white; /* Fixed text color */
+    text-decoration: none;
+    transition: 0.3s ease;
+    text-align: center; /* Center text in dropdown */
+    letter-spacing: 1px; /* Reduced spacing for readability */
+    font-size: 16px;
+}
+
+.dropdown-menu a:hover {
+    color: #d4af37; /* Gold highlight */
+    text-shadow: 0 0 5px #ffd700;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+}
+
+.dropdown:hover .dropdown-menu,
+.dropdown:focus-within .dropdown-menu {
+    opacity: 1;
+    transform: translate(-50%, 0); /* Correct alignment on hover */
+    pointer-events: auto;
+}
+
+.hero {
+    height: 80vh;
+      background-size: cover;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    padding-left: -20%; /* Adjusted for better mobile fit */
+    color: #DAA520;
+    margin-top: 20; /* Removed excess margin */
+}
+
+.hero-GG {
+    padding: 50px;
+    width: fit-content;
+}
+
+.hero-GG h1 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 4.5rem;
+    letter-spacing: 4px;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.8);
+}
+
+.hero-GG p {
+    font-family: 'Cinzel', serif;
+    font-size: 1.8rem;
+    margin-bottom: 70px;
+    color: #FAEBD7;
+    line-height: 1.7;
+}
+
+.site-footer {
+    padding: 10px 0;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+ 
+}
+
+.social-icons a {
+    color: #fff;
+    margin: 0 15px;
+    font-size: 30px;
+    text-decoration: none;
+    transition: transform 0.2s, color 0.2s;
+}
+
+.social-icons a:hover {
+    color: #CC0033;
+    transform: scale(1.2);
+    background-color: black;
+    border-radius: 50%;
+    padding: 5px;
+}
+
+/* Fixed Product Image & Price Display */
+.products-section {
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 0 20px;
+    display: flex;
+    gap: 0px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.product-item {
+    text-align: center;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    border-radius: 15px;
+    border: 1px solid #d4af37;
+    width: 350px; /* Consistent card width */
+}
+
+.product-img {
+    width: 100%; /* Full width of card */
+    height: 200px; /* Fixed height for landscape orientation */
+    object-fit: cover; /* Ensures image stays landscape without distortion */
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.product-desc {
+    color: #FAEBD7;
+    font-size: 1rem;
+    margin: 10px 0;
+}
+
+.product-price {
+    display: block;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #ffd700;
+    margin-top: 10px;
+}
+.title p{
+font-size: 18px;
+text-decoration: none;
+font-family: serif;
+margin-top:10px;
+color: white;
+margin-right: 30px;
+}

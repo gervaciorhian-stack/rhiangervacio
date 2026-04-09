@@ -1,0 +1,337 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Myth Bakery | Cakes Menu</title>
+    <link rel="stylesheet" href="cupcakes.css">
+    <!-- Font Awesome para sa Social Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+<!-- NAVIGATION BAR -->
+<nav class="myth-nav">
+    <a href="index.html" class="logo-link">
+        <img src="image/br.png" alt="Myth Bakery Logo" class="logo-img">
+    </a>
+    <ul class="myth-links">
+        <li><a href="index.html">HOME</a></li>
+        <li class="dropdown">
+            <a href="#">PRODUCT ▾</a>
+            <ul class="dropdown-menu">
+                <li><a href="cupcakes.html">Cupcakes</a></li>
+                <li><a href="bread.html">Bread</a></li>
+                <li><a href="cakes.html">Cakes</a></li>
+            </ul>
+        </li>
+        <li><a href="about.html">ABOUT</a></li>
+        <li><a href="contact.html">CONTACT</a></li>
+    </ul>
+</nav>
+
+<!-- HERO SECTION -->
+<section class="hero">
+    <h1>Our Menu</h1>
+    <p>Maffin Bakery founded by Rhian Gervacio</p>
+</section>
+
+<!-- PRODUCT GRID -->
+<section class="products-grid">
+    <!-- Strawberry -->
+    <div class="product-card" data-target="chocolate-modal">
+        <span class="tag">NEW</span>
+        <img src="image/choco.png" alt="Strawberry Cake">
+        <h3>CHOCOLATE</h3>
+        <p>55 PHP</p>
+        <button class="view-btn">ORDER NOW</button>
+    </div>
+
+    <!-- Pistachio -->
+    <div class="product-card" data-target="vanila-modal">
+        <img src="image/pi.png" alt="Pistachio Cake">
+        <h3>VANILLA</h3>
+        <p>75 PHP</p>
+        <button class="view-btn">ORDER NOW</button>
+    </div>
+
+    <!-- Red Velvet -->
+    <div class="product-card" data-target="strawberry-modal">
+        <span class="tag">BEST SELLER</span>
+        <img src="image/22.png" alt="Red Velvet Cake">
+        <h3>STRAWBERRY</h3>
+        <p>70 PHP</p>
+        <button class="view-btn">ORDER NOW</button>
+    </div>
+
+    <!-- Cookies & Cream -->
+    <div class="product-card" data-target="ube-modal">
+        <img src="image/ube.png" alt="Cookies and Cream Cake">
+        <h3>UBE</h3>
+        <p>75 PHP</p>
+        <button class="view-btn">ORDER NOW</button>
+    </div>
+
+    <!-- Chocolate -->
+    <div class="product-card" data-target="caramel-modal">
+        <img src="image/vv1.png" alt="Chocolate Cake">
+        <h3>SALTED CARAMEL</h3>
+        <p>75 PHP</p>
+        <button class="view-btn">ORDER NOW</button>
+    </div>
+
+    <!-- Carrot -->
+    <div class="product-card" data-target="classic-modal">
+        <img src="image/11.png" alt="Carrot Cake">
+        <h3>CLASSIC VANILLA</h3>
+        <p>100 PHP</p>
+        <button class="view-btn">ORDER NOW</button>
+    </div>
+
+    <!-- Cheesecake -->
+    <div class="product-card" data-target="velvet-modal">
+        <img src="image/red1.png" alt="Cheesecake">
+        <h3>RED VELVET</h3>
+        <p>70 PHP</p>
+        <button class="view-btn">ORDER NOW</button>
+    </div>
+
+    <!-- Butter -->
+    <div class="product-card" data-target="matcha-modal">
+        <img src="image/gree.png" alt="Butter Cake">
+        <h3>MATCHA</h3>
+        <p>80 PHP</p>
+        <button class="view-btn">ORDER NOW</button>
+    </div>
+     <!-- Pistachio -->
+    <div class="product-card" data-target="lemon-modal">
+        <img src="image/lem.png" alt="Pistachio Cake">
+        <h3>LEMON</h3>
+        <p>85 PHP</p>
+        <button class="view-btn">ORDER NOW</button>
+    </div>
+
+</section>
+
+<!-- MODALS (The Popups) -->
+<div id="chocolate-modal" class="product-modal">
+    <div class="modal-content">
+        <span class="close-btn">&times;</span>
+        <div class="modal-grid">
+            <div class="modal-img"><img src="image/choco.png" alt="Strawberry"></div>
+            <div class="modal-details">
+                <h2>CHOCOLATE CAKE</h2>
+                <p class="price">55 PHP</p>
+                <p class="desc">
+
+This chocolate cupcake is rich, moist, and full of deep cocoa flavor. 
+It is made with high-quality chocolate for a smooth and satisfying taste. 
+The creamy chocolate frosting adds extra sweetness and texture. 
+Each bite melts in your mouth and gives a comforting dessert experience. 
+Perfect for chocolate lovers and any special occasion.
+</p>
+                <button class="shop-btn">BUY NOW</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- MODALS (The Popups) -->
+<div id="vanila-modal" class="product-modal">
+    <div class="modal-content">
+        <span class="close-btn">&times;</span>
+        <div class="modal-grid">
+            <div class="modal-img"><img src="image/pi.png" alt="Strawberry"></div>
+            <div class="modal-details">
+                <h2>VANILLA CAKE</h2>
+                <p class="price">70 PHP</p>
+                <p class="desc">
+This vanilla cupcake is soft, light, and perfectly fluffy. 
+It is made with premium vanilla for a classic and sweet flavor. 
+The smooth vanilla frosting enhances its creamy texture. 
+It is simple yet delicious and loved by all ages. 
+A perfect choice for everyday treats or celebrations.
+</p>
+                <button class="shop-btn">BUY NOW</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- MODALS (The Popups) -->
+<div id="strawberry-modal" class="product-modal">
+    <div class="modal-content">
+        <span class="close-btn">&times;</span>
+        <div class="modal-grid">
+            <div class="modal-img"><img src="image/22.png" alt="Strawberry"></div>
+            <div class="modal-details">
+                <h2>STTRAWBERRY CAKE</h2>
+                <p class="price">70 PHP</p>
+<p class="desc">
+This strawberry cupcake is soft and infused with real strawberry flavor. 
+It has a light and refreshing taste that is not too sweet. 
+The strawberry frosting adds a creamy and fruity finish. 
+Each bite gives a fresh and delightful experience. 
+Perfect for those who love fruity desserts.
+</p>                <button class="shop-btn">SHOP NOW</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<!-- MODALS (The Popups) -->
+<div id="ube-modal" class="product-modal">
+    <div class="modal-content">
+        <span class="close-btn">&times;</span>
+        <div class="modal-grid">
+            <div class="modal-img"><img src="image/ube.png" alt="Strawberry"></div>
+            <div class="modal-details">
+                <h2>UBE CAKE</h2>
+                <p class="price">700 PHP</p>
+               <p class="desc">
+<p class="desc">
+This ube cupcake is a Filipino favorite with a unique sweet flavor. 
+It has a soft and fluffy texture with a vibrant purple color. 
+The creamy ube frosting enhances its rich taste. 
+It offers a perfect balance of sweetness and smoothness. 
+A great dessert for anyone who loves traditional flavors.
+</p>
+                <button class="shop-btn">SHOP NOW</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- MODALS (The Popups) -->
+<div id="caramel-modal" class="product-modal">
+    <div class="modal-content">
+        <span class="close-btn">&times;</span>
+        <div class="modal-grid">
+            <div class="modal-img"><img src="image/vv1.png" alt="Strawberry"></div>
+            <div class="modal-details">
+                <h2>SALTED CARAMEL</h2>
+                <p class="price">700 PHP</p>
+               <p class="desc">
+This salted caramel cupcake is rich, sweet, and slightly salty. 
+It features a soft cake base with smooth caramel flavor. 
+The salted caramel frosting adds a perfect balance of taste. 
+Each bite is creamy, bold, and satisfying. 
+Ideal for those who enjoy sweet and salty desserts.
+</p>
+                <button class="shop-btn">SHOP NOW</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- MODALS (The Popups) -->
+<div id="classic-modal" class="product-modal">
+    <div class="modal-content">
+        <span class="close-btn">&times;</span>
+        <div class="modal-grid">
+            <div class="modal-img"><img src="image/11.png" alt="Strawberry"></div>
+            <div class="modal-details">
+                <h2>CLASSIC CARAMEL</h2>
+                <p class="price">700 PHP</p>
+<p class="desc">
+This classic caramel cake is rich, smooth, and full of sweet caramel flavor. 
+It has a soft and moist texture that melts in your mouth. 
+The caramel frosting adds a creamy and slightly buttery taste. 
+Each bite gives a perfect balance of sweetness and richness. 
+A delicious dessert for caramel lovers and special occasions.
+</p>
+
+            </div>
+        </div>
+    </div>
+</div>
+<!-- MODALS (The Popups) -->
+<div id="velvet-modal" class="product-modal">
+    <div class="modal-content">
+        <span class="close-btn">&times;</span>
+        <div class="modal-grid">
+            <div class="modal-img"><img src="image/red1.png" alt="Strawberry"></div>
+            <div class="modal-details">
+                <h2>RED VELVET CAKE</h2>
+                <p class="price">70 PHP</p>
+<p class="desc">
+This red velvet cake is soft, moist, and beautifully layered with cream cheese frosting. 
+It has a mild cocoa flavor that pairs perfectly with its rich and creamy filling. 
+The texture is smooth and melts in your mouth with every bite. 
+Ideal for special occasions or romantic celebrations. 
+A timeless favorite that never goes out of style.
+</p><p class="desc">Cake flavored or topped with fresh strawberries. Light, sweet, and perfect for celebrations.</p>
+                <button class="shop-btn">BUY NOW</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- MODALS (The Popups) -->
+<div id="matcha-modal" class="product-modal">
+    <div class="modal-content">
+        <span class="close-btn">&times;</span>
+        <div class="modal-grid">
+            <div class="modal-img"><img src="image/gree.png" alt="Strawberry"></div>
+            <div class="modal-details">
+                <h2>MATCHA</h2>
+                <p class="price">70 PHP</p>
+<p class="desc">
+<p class="desc">
+This matcha cupcake is made with premium green tea powder. 
+It has a unique earthy flavor with a hint of sweetness. 
+The matcha frosting adds a creamy and smooth texture. 
+Each bite gives a calm and rich taste experience. 
+Perfect for matcha lovers looking for something different.
+</p>                <button class="shop-btn">BUY NOW</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Idagdag ang iba pang modals dito na may parehong structure pero palitan ang IDs (pistachio-modal, etc.) -->
+
+<!-- FOOTER -->
+<footer class="site-footer">
+    <div class="social-icons">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-tiktok"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+    </div>
+    <div class="title">
+        <p>This website is for project purposes only.</p>
+    </div>
+</footer>
+
+<!-- JAVASCRIPT FOR MODALS -->
+<script>
+    const viewBtns = document.querySelectorAll('.view-btn');
+    const closeBtns = document.querySelectorAll('.close-btn');
+
+    viewBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+            const modalId = btn.parentElement.getAttribute('data-target');
+            document.getElementById(modalId).style.display = "flex";
+            document.body.style.overflow = "hidden"; // Stop scrolling
+        });
+    });
+
+    closeBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+            btn.closest('.product-modal').style.display = "none";
+            document.body.style.overflow = "auto";
+        });
+    });
+
+    window.onclick = (event) => {
+        if (event.target.classList.contains('product-modal')) {
+            event.target.style.display = "none";
+            document.body.style.overflow = "auto";
+        }
+    };
+</script>
+
+</body>
+</html>

@@ -1,0 +1,184 @@
+/* ✅ FIX: para footer nasa baba lagi */
+html, body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    background: url("image/bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+/* HERO kukuha ng space para itulak footer pababa */
+.hero {
+    flex: 1;
+}
+
+/* LOGO */
+.logo-img {
+    height: 100px;
+    width: auto;
+    display: block;
+}
+
+/* NAVBAR */
+.myth-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 3rem;
+}
+
+.myth-links {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.myth-links li {
+    margin-left: 40px;
+    position: relative;
+}
+
+.myth-links a {
+    text-decoration: none;
+    color: white;
+    font-family: Ariel Black; 
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    transition: all 0.4s ease;
+    position: relative;
+}
+
+.myth-links a:hover {
+    color: #d4af37;
+}
+
+.myth-links a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -5px;
+    left: 0;
+    background-color: #d4af37;
+    transition: width 0.3s;
+}
+
+.myth-links a:hover::after {
+    width: 100%;
+}
+
+
+/* Fixed Dropdown Alignment */
+.dropdown {
+    position: fixed;
+    display: inline-block;
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 100%; /* Align below "PRODUCT" link */
+    left: 50%; /* Center dropdown */
+    transform: translateX(-50%); /* Center horizontally */
+    min-width: 160px;
+    background: rgba(0, 0, 0, 0.8);
+    border: 1px solid #d4af37;
+    border-radius: 12px;
+    list-style: none;
+    padding: 0;
+    margin: 5px 0 0;
+    opacity: 0;
+    transform: translate(-50%, 10px); /* Combine transforms */
+    pointer-events: none;
+    transition: all 0.3s ease;
+    z-index: 1000;
+}
+
+.dropdown-menu a {
+    display: block;
+    padding: 12px 20px;
+    color: white; /* Fixed text color */
+    text-decoration: none;
+    transition: 0.3s ease;
+    text-align: center; /* Center text in dropdown */
+    letter-spacing: 2px; /* Reduced spacing for readability */
+    font-size: 16px;
+}
+
+.dropdown-menu a:hover {
+    color: #d4af37; /* Gold highlight */
+    text-shadow: 0 0 5px #ffd700;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+}
+
+.dropdown:hover .dropdown-menu,
+.dropdown:focus-within .dropdown-menu {
+    opacity: 1;
+    transform: translate(-50%, 0); /* Correct alignment on hover */
+    pointer-events: auto;
+}
+
+/* HERO (unchanged design) */
+.hero {
+    height: 70vh;
+    background: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(8px);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    padding-left: 10%;
+    color: #DAA520;
+}
+
+.hero-GG {
+    padding: 20px;
+}
+
+.hero-GG h1 {
+    font-size: 4.5rem;
+    letter-spacing: 4px;
+}
+
+.hero-GG p {
+    font-size: 1.8rem;
+    color: #FAEBD7;
+}
+
+/* ✅ FIX: footer sa baba */
+.site-footer {
+    text-align: center;
+    width: 100%;
+    padding: 10px 0;
+}
+
+/* ICONS */
+.social-icons a {
+    color: #fff;
+    margin: 0 15px;
+    font-size: 30px;
+    text-decoration: none;
+}
+
+.social-icons a:hover {
+    color: #CC0033;
+    transform: scale(1.2);
+    background-color: black;
+    border-radius: 50%;
+    padding: 5px;
+}
+
+.title p {
+    font-size: 18px;
+    font-family: serif;
+    color: white;
+}

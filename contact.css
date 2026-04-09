@@ -1,0 +1,269 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* BODY */
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, sans-serif;
+    background: url(image/bg.png) no-repeat center/cover fixed;
+    color: white;
+}
+
+/* NAVIGATION */
+.logo-img {
+    height: 100px;
+}
+
+.myth-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 3rem;
+   
+  }
+
+.myth-links {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.myth-links li {
+    margin-left: 40px;
+    position: relative; /* For proper dropdown positioning */
+}
+
+.myth-links a {
+    text-decoration: none;
+    color: white;
+    font-family: Ariel Black;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    transition: all 0.4s ease;
+    position: relative;
+}
+
+.myth-links a:hover {
+    color: #d4af37;
+}
+
+.myth-links a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -5px;
+    left: 0;
+    background-color: #d4af37;
+    transition: width 0.3s;
+    
+}
+
+.myth-links a:hover::after {
+    width: 100%;
+}
+
+/* Fixed Dropdown Alignment */
+.dropdown {
+    position: fixed;
+    display: inline-block;
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 100%; /* Align below "PRODUCT" link */
+    left: 50%; /* Center dropdown */
+    transform: translateX(-50%); /* Center horizontally */
+    min-width: 160px;
+    background: rgba(0, 0, 0, 0.8);
+    border: 1px solid #d4af37;
+    border-radius: 12px;
+    list-style: none;
+    padding: 0;
+    margin: 5px 0 0;
+    opacity: 0;
+    transform: translate(-50%, 10px); /* Combine transforms */
+    pointer-events: none;
+    transition: all 0.3s ease;
+    z-index: 1000;
+}
+
+.dropdown-menu a {
+    display: block;
+    padding: 12px 20px;
+    color: white; /* Fixed text color */
+    text-decoration: none;
+    transition: 0.3s ease;
+    text-align: center; /* Center text in dropdown */
+    letter-spacing: 2px; /* Reduced spacing for readability */
+    font-size: 16px;
+}
+
+.dropdown-menu a:hover {
+    color: #d4af37; /* Gold highlight */
+    text-shadow: 0 0 5px #ffd700;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+}
+
+.dropdown:hover .dropdown-menu,
+.dropdown:focus-within .dropdown-menu {
+    opacity: 1;
+    transform: translate(-50%, 0); /* Correct alignment on hover */
+    pointer-events: auto;
+}
+
+/* HERO */
+.hero {
+    text-align: center;
+    padding: 80px 20px;
+    animation: fadeIn 1s ease;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    text-shadow: 0 0 10px black;
+}
+
+.hero p {
+    font-size: 18px;
+}
+
+/* ABOUT */
+.about {
+    padding: 50px 20px;
+}
+
+.about-container {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-text {
+    max-width: 600px;
+}
+
+.about-text h2 {
+    font-size: 32px;
+    margin-bottom: 15px;
+    color: #d4af37;
+}
+
+.about-text p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.about-image img {
+    width: 400px;
+    border-radius: 15px;
+    object-fit: cover;
+}
+/* PORTFOLIO */
+.portfolio {
+    padding: 50px 20px;
+}
+
+.portfolio-container {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: auto;
+    background: rgba(255,255,255,0.12);
+    backdrop-filter: blur(15px);
+    border-radius: 20px;
+    overflow: hidden;
+    animation: fadeIn 1s ease;
+}
+
+.portfolio-left {
+    width: 30%;
+    background: rgba(255,255,255,0.7);
+    padding: 25px;
+    text-align: center;
+    animation: slideLeft 1s ease;
+}
+
+.profile {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.role {
+    font-size: 14px;
+    margin: 10px 0;
+    font-weight: bold;
+}
+
+.portfolio-right {
+    width: 70%;
+    padding: 40px;
+    animation: slideRight 1s ease;
+}
+
+.portfolio-right h2 {
+    margin-bottom: 20px;
+    border-bottom: 2px solid #d4af37;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.card {
+    flex: 1 1 200px;
+    background: rgba(255,255,255,0.2);
+    padding: 20px;
+    border-radius: 15px;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+.card:hover {
+    transform: translateY(-10px) scale(1.05);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+}
+
+/* FOOTER */
+.site-footer {
+    padding: 10px 0;
+    text-align: center;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+}
+
+.social-icons a {
+    color: #fff;
+    margin: 0 15px;
+    font-size: 30px;
+    text-decoration: none;
+    transition: transform 0.2s, color 0.2s;
+}
+
+.social-icons a:hover {
+    color: #CC0033;
+    transform: scale(1.2);
+    background-color: black;
+    border-radius: 50%;
+    padding: 5px;
+}
+

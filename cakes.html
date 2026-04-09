@@ -1,0 +1,339 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Myth Bakery | Cakes Menu</title>
+    <link rel="stylesheet" href="cakes.css">
+    <!-- Font Awesome para sa Social Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+<!-- NAVIGATION BAR -->
+<nav class="myth-nav">
+    <a href="index.html" class="logo-link">
+        <img src="image/br.png" alt="Myth Bakery Logo" class="logo-img">
+    </a>
+    <ul class="myth-links">
+        <li><a href="index.html">HOME</a></li>
+        <li class="dropdown">
+            <a href="#">PRODUCT ▾</a>
+            <ul class="dropdown-menu">
+                <li><a href="cupcakes.html">Cupcakes</a></li>
+                <li><a href="bread.html">Bread</a></li>
+                <li><a href="cakes.html">Cakes</a></li>
+            </ul>
+        </li>
+        <li><a href="about.html">ABOUT</a></li>
+        <li><a href="contact.html">CONTACT</a></li>
+    </ul>
+</nav>
+
+<!-- HERO SECTION -->
+<section class="hero">
+    <h1>Our Menu</h1>
+    <p>Maffin Bakery founded by Rhian Gervacio</p>
+</section>
+
+<!-- PRODUCT GRID -->
+<section class="products-grid">
+    <!-- Strawberry -->
+    <div class="product-card" data-target="strawberry-modal">
+        <span class="tag">NEW</span>
+        <img src="image/re.png" alt="Strawberry Cake">
+        <h3>Strawberry</h3>
+        <p>700 PHP</p>
+        <button class="view-btn">ORDER NOW</button>
+    </div>
+
+    <!-- Pistachio -->
+    <div class="product-card" data-target="pistachio-modal">
+        <img src="image/jp.png" alt="Pistachio Cake">
+        <h3>Pistachio</h3>
+        <p>850 PHP</p>
+        <button class="view-btn">ORDER NOW</button>
+    </div>
+
+    <!-- Red Velvet -->
+    <div class="product-card" data-target="redvelvet-modal">
+        <span class="tag">BEST SELLER</span>
+        <img src="image/gg2.png" alt="Red Velvet Cake">
+        <h3>Red Velvet</h3>
+        <p>850 PHP</p>
+        <button class="view-btn">ORDER NOW</button>
+    </div>
+
+    <!-- Cookies & Cream -->
+    <div class="product-card" data-target="cookies-modal">
+        <img src="image/dk.png" alt="Cookies and Cream Cake">
+        <h3>Cookies & Cream</h3>
+        <p>750 PHP</p>
+        <button class="view-btn">ORDER NOW</button>
+    </div>
+
+    <!-- Chocolate -->
+    <div class="product-card" data-target="chocolate-modal">
+        <img src="image/ca2.png" alt="Chocolate Cake">
+        <h3>Chocolate</h3>
+        <p>500 PHP</p>
+        <button class="view-btn">ORDER NOW</button>
+    </div>
+
+    <!-- Carrot -->
+    <div class="product-card" data-target="carrot-modal">
+        <img src="image/oi.png" alt="Carrot Cake">
+        <h3>Carrot Cake</h3>
+        <p>1000 PHP</p>
+        <button class="view-btn">ORDER NOW</button>
+    </div>
+
+    <!-- Cheesecake -->
+    <div class="product-card" data-target="cheesecake-modal">
+        <img src="image/butter.png" alt="Cheesecake">
+        <h3>Cheesecake</h3>
+        <p>700 PHP</p>
+        <button class="view-btn">ORDER NOW</button>
+    </div>
+
+    <!-- Butter -->
+    <div class="product-card" data-target="butter-modal">
+        <img src="image/op.png" alt="Butter Cake">
+        <h3>Butter</h3>
+        <p>800 PHP</p>
+        <button class="view-btn">ORDER NOW</button>
+    </div>
+     <!-- Pistachio -->
+    <div class="product-card" data-target="single-modal">
+        <img src="image/33.png" alt="Pistachio Cake">
+        <h3>Single-tier drip</h3>
+        <p>850 PHP</p>
+        <button class="view-btn">ORDER NOW</button>
+    </div>
+
+</section>
+
+<!-- MODALS (The Popups) -->
+<div id="strawberry-modal" class="product-modal">
+    <div class="modal-content">
+        <span class="close-btn">&times;</span>
+        <div class="modal-grid">
+            <div class="modal-img"><img src="image/re.png" alt="Strawberry"></div>
+            <div class="modal-details">
+                <h2>STRAWBERRY CAKE</h2>
+                <p class="price">700 PHP</p>
+               <p class="desc">
+This strawberry cake is made with soft and fluffy layers infused with real strawberry flavor. 
+It is topped with fresh strawberries and a light, creamy frosting that balances sweetness and freshness. 
+Perfect for birthdays, celebrations, or a simple sweet craving. 
+Each bite gives a refreshing and fruity taste that is not too heavy. 
+A delightful choice for anyone who loves classic and elegant desserts.
+</p>
+                <button class="shop-btn">BUY NOW</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- MODALS (The Popups) -->
+<div id="pistachio-modal" class="product-modal">
+    <div class="modal-content">
+        <span class="close-btn">&times;</span>
+        <div class="modal-grid">
+            <div class="modal-img"><img src="image/jp.png" alt="Strawberry"></div>
+            <div class="modal-details">
+                <h2>PISTACHIO CAKE</h2>
+                <p class="price">850 PHP</p>
+                <p class="desc">
+This pistachio cake offers a rich and nutty flavor that is both unique and satisfying. 
+Made with finely ground pistachios, it has a soft texture and a slightly sweet taste. 
+The creamy frosting enhances the flavor while keeping it smooth and balanced. 
+It is perfect for those who enjoy a more sophisticated dessert option. 
+Every slice delivers a delicious blend of sweetness and nuttiness.
+</p>
+                <button class="shop-btn">BUY NOW</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- MODALS (The Popups) -->
+<div id="redvelvet-modal" class="product-modal">
+    <div class="modal-content">
+        <span class="close-btn">&times;</span>
+        <div class="modal-grid">
+            <div class="modal-img"><img src="image/gg2.png" alt="Strawberry"></div>
+            <div class="modal-details">
+                <h2>RED VELVET CAKE</h2>
+                <p class="price">850 PHP</p>
+     <p class="desc">
+This red velvet cake is soft, moist, and beautifully layered with cream cheese frosting. 
+It has a mild cocoa flavor that pairs perfectly with its rich and creamy filling. 
+The texture is smooth and melts in your mouth with every bite. 
+Ideal for special occasions or romantic celebrations. 
+A timeless favorite that never goes out of style.
+</p>
+                <button class="shop-btn">ORDER NOW</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- MODALS (The Popups) -->
+<div id="cookies-modal" class="product-modal">
+    <div class="modal-content">
+        <span class="close-btn">&times;</span>
+        <div class="modal-grid">
+            <div class="modal-img"><img src="image/dk.png" alt="Strawberry"></div>
+            <div class="modal-details">
+                <h2>COOKIES AND CREAM CAKE</h2>
+                <p class="price">850 PHP</p>
+               <p class="desc">
+This cookies and cream cake is soft, creamy, and filled with crushed chocolate cookies. 
+It has a rich vanilla base combined with crunchy cookie bits. 
+The frosting is smooth and blended with cookies for extra flavor. 
+Each bite gives a mix of creamy and crunchy texture. 
+Perfect for those who love cookies in their desserts.
+</p>
+                <button class="shop-btn">SHOP NOW</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<!-- MODALS (The Popups) -->
+<div id="chocolate-modal" class="product-modal">
+    <div class="modal-content">
+        <span class="close-btn">&times;</span>
+        <div class="modal-grid">
+            <div class="modal-img"><img src="image/ca2.png" alt="Strawberry"></div>
+            <div class="modal-details">
+                <h2>CHOCOLATE CAKE</h2>
+                <p class="price">850 PHP</p>
+               <p class="desc">
+This chocolate cake is rich, moist, and full of deep chocolate flavor. 
+Made with high-quality cocoa, it delivers a satisfying and indulgent taste. 
+The smooth chocolate frosting adds an extra layer of sweetness and creaminess. 
+Perfect for chocolate lovers looking for a classic dessert. 
+Every bite is a delicious and comforting experience.
+</p>
+                <button class="shop-btn">SHOP NOW</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<!-- MODALS (The Popups) -->
+<div id="carrot-modal" class="product-modal">
+    <div class="modal-content">
+        <span class="close-btn">&times;</span>
+        <div class="modal-grid">
+            <div class="modal-img"><img src="image/oi.png" alt="Strawberry"></div>
+            <div class="modal-details">
+                <h2>CARROT CAKE</h2>
+                <p class="price">700 PHP</p>
+               <p class="desc">
+This carrot cake is moist, soft, and full of natural sweetness. 
+It is made with fresh grated carrots and warm spices. 
+The cream cheese frosting adds a rich and tangy flavor. 
+It has a slightly dense texture that is satisfying in every bite. 
+Perfect for those who enjoy a classic and homemade-style dessert.
+</p>
+                <button class="shop-btn">SHOP NOW</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- MODALS (The Popups) -->
+<div id="cheesecake-modal" class="product-modal">
+    <div class="modal-content">
+        <span class="close-btn">&times;</span>
+        <div class="modal-grid">
+            <div class="modal-img"><img src="image/butter.png" alt="Strawberry"></div>
+            <div class="modal-details">
+                <h2>CHEESECAKE CAKE</h2>
+                <p class="price">700 PHP</p>
+               <p class="desc">
+This cheesecake is creamy, smooth, and rich with a perfectly balanced sweetness. 
+It has a soft texture that melts in your mouth with every bite. 
+The buttery crust adds a slight crunch that complements the creamy filling. 
+Perfect for dessert lovers who enjoy a rich and satisfying treat. 
+A classic cake that is simple yet incredibly delicious.
+</p>
+                <button class="shop-btn">SHOP NOW</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- MODALS (The Popups) -->
+<div id="single-modal" class="product-modal">
+    <div class="modal-content">
+        <span class="close-btn">&times;</span>
+        <div class="modal-grid">
+            <div class="modal-img"><img src="image/33.png" alt="Strawberry"></div>
+            <div class="modal-details">
+                <h2>SINGLE-TIER DRIP CAKE</h2>
+                <p class="price">700 PHP</p>
+<p class="desc">
+This butter cake is soft, fluffy, and rich in buttery flavor. 
+It is baked to perfection with a golden and moist texture. 
+The taste is simple yet comforting and delicious. 
+It pairs well with coffee, tea, or any drink. 
+A classic cake that is perfect for everyday enjoyment.
+</p>
+                <button class="shop-btn">SHOP NOW</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Idagdag ang iba pang modals dito na may parehong structure pero palitan ang IDs (pistachio-modal, etc.) -->
+
+<!-- FOOTER -->
+<footer class="site-footer">
+    <div class="social-icons">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-tiktok"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+    </div>
+    <div class="title">
+        <p>This website is for project purposes only.</p>
+    </div>
+</footer>
+
+<!-- JAVASCRIPT FOR MODALS -->
+<script>
+    const viewBtns = document.querySelectorAll('.view-btn');
+    const closeBtns = document.querySelectorAll('.close-btn');
+
+    viewBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+            const modalId = btn.parentElement.getAttribute('data-target');
+            document.getElementById(modalId).style.display = "flex";
+            document.body.style.overflow = "hidden"; // Stop scrolling
+        });
+    });
+
+    closeBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+            btn.closest('.product-modal').style.display = "none";
+            document.body.style.overflow = "auto";
+        });
+    });
+
+    window.onclick = (event) => {
+        if (event.target.classList.contains('product-modal')) {
+            event.target.style.display = "none";
+            document.body.style.overflow = "auto";
+        }
+    };
+</script>
+
+</body>
+</html>
